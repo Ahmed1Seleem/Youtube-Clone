@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Clone</title>
+    <script src="https://kit.fontawesome.com/ef3b9af94e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header Starts Here -->
+    <header>
+        <section class="leftSection">
+            <a href="#" class="menuBar"><i class="fa-solid fa-bars"></i></a>
+            <a href="#" class="youtubeLogo">
+                <img src="images/Youtube_logo.png" alt="youtubeLogo">
+                <h3 ID="youtubeTxt">&nbsp;YouTube</h3>
+            </a>
+        </section>
+        <section class="middleSection">
+            <form action="#" id="searchForm">
+                <input type="text" class="searchBox" placeholder="Search">
+                <a href="#" class="searchIcon"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#" class="mic"><i class="fa-solid fa-microphone"></i></a>
+            </form>
+        </section>
+        <section class="rightSection">
+            <a href="#" class="videoicon"><i class="fa-solid fa-video"></i></a>
+            <a href="#"><i class="fa-solid fa-bell"></i></a>
+            <a href="#" class="user">
+                <img src="images/wallpaperflare.com_wallpaper.jpg" alt="accout img">
+            </a>
+            <a href="#" class="hiddenSearchIcon"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </section>
+    </header>
+
+
+    <!-- MainContainer starts here -->
+    <div class="mainContainer">
+
+        <!-- sidebar start here -->
+        <aside>
+            <nav class="sidebar">
+                <a href="#" class="active">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-tiktok"></i>
+                    <span>Shorts</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-paperclip"></i>
+                    <span>Subscriptions</span>
+                </a>
+                <hr>
+
+                <a href="#">
+                    <span id="you">You</span>
+                    <i class="fa-solid fa-angle-right"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-regular fa-id-badge"></i>
+                    <span>Your channel</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-play"></i>
+                    <span>Your videos</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <span>History</span>
+                </a>
+                <a href="#">
+                    <i class="fa-regular fa-clock"></i>
+                    <span>Watch later</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-angle-down"></i>
+                    <span>Show more</span>
+                </a>
+                <hr>
+
+                <p>Subscriptions</p>
+                <a href="#">
+                    <img src="images/wallpaperflare.com_wallpaper.jpg" alt="chnLogo">
+                    <span>Ahmed Seleem</span>
+                </a>
+                <a href="#">
+                    <img src="images/wallpaperflare.com_wallpaper.jpg" alt="chnLogo">
+                    <span>Ahmed Seleem</span>
+                </a>
+                <a href="#">
+                    <img src="images/wallpaperflare.com_wallpaper.jpg" alt="chnLogo">
+                    <span>Ahmed Seleem</span>
+                </a>
+                <a href="#">
+                    <img src="images/wallpaperflare.com_wallpaper.jpg" alt="chnLogo">
+                    <span>Ahmed Seleem</span>
+                </a>
+                <a href="#">
+                    <img src="images/wallpaperflare.com_wallpaper.jpg" alt="chnLogo">
+                    <span>Ahmed Seleem</span>
+                </a>
+                <a href="#">
+                    <img src="images/wallpaperflare.com_wallpaper.jpg" alt="chnLogo">
+                    <span>Ahmed Seleem</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-angle-down"></i>
+                    <span>Show 453 more</span>
+                </a>
+                <hr>
+
+                <p>Explore</p>
+                <a href="#">
+                    <i class="fa-solid fa-fire"></i>
+                    <span>Trending</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-music"></i>
+                    <span>Music</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-tower-broadcast"></i>
+                    <span>Live</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-gamepad"></i>
+                    <span>Gaming</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-trophy"></i>
+                    <span>Sports</span>
+                </a>
+                <hr>
+                <p>More from YouTube</p>
+                <a href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                    <span>YouTube Premium</span>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-square-youtube"></i>
+                    <span>YouTube Studio</span>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                    <span>YouTube Music</span>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-square-youtube"></i>
+                    <span>YouTube Kids</span>
+                </a>
+                <hr>
+                <a href="#">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Setting</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-flag"></i>
+                    <span>ReportHistory</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-question"></i>
+                    <span>Help</span>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-exclamation"></i>
+                    <span>Send feedback</span>
+                </a>
+                <hr>
+                <a href="#" class="about">About Press Copyright <br>
+                    Contact us Creators <br> AdvertiseDevelopers</a>
+                <a href="#" class="about">Terms Privacy Policy & Safety <br>
+                    How YouTube works <br> Test new features</a>
+                <p id="aboutyear">© 2024 Google LLC</p>
+            </nav>
+        </aside>
+
+        <!-- compactSideBar starts here -->
+        <div class="compactSideBarContainer">
+            <nav class="compactSideBar">
+                <a class="compactSideBar-item" href="#" class="active">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Home</span>
+                </a>
+                <a class="compactSideBar-item" href="#">
+                    <i class="fa-brands fa-tiktok"></i>
+                    <span>Shorts</span>
+                </a>
+                <a class="compactSideBar-item" href="#">
+                    <i class="fa-solid fa-paperclip"></i>
+                    <span>Subscriptions</span>
+                </a>
+                <a class="compactSideBar-item you" href="#">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <span>You</span>
+                </a>
+            </nav>
+        </div>
+
+        <!-- mobileNavBar start here-->
+        <div class="mobileNavBarContainer">
+            <nav class="mobileNavBar">
+                <a class="mobNav-item" href="#" class="active">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Home</span>
+                </a>
+                <a class="mobNav-item" href="#">
+                    <i class="fa-brands fa-tiktok"></i>
+                    <span>Shorts</span>
+                </a>
+                <a class="mobNav-item" href="#">
+                    <i class="fa-solid fa-circle-plus"></i>
+                </a>
+                <a class="mobNav-item" href="#">
+                    <i class="fa-solid fa-paperclip"></i>
+                    <span>Subscriptions</span>
+                </a>
+                <a class="mobNav-item you" href="#">
+                    <img src="images/wallpaperflare.com_wallpaper.jpg" alt="youphoto">
+                    <span>You</span>
+                </a>
+            </nav>
+        </div>
+
+
+        <!-- mainContent start here -->
+        <main class="mainContent">
+
+            <!-- suggestionNav start here -->
+            <nav class="sugNav">
+                <a class="sugNav-item active" href="#">All</a>
+                <a class="sugNav-item" href="#">Music</a>
+                <a class="sugNav-item" href="#">Soundtracks</a>
+                <a class="sugNav-item" href="#">Playlists</a>
+                <a class="sugNav-item" href="#">Live</a>
+                <a class="sugNav-item" href="#">Gaming</a>
+                <a class="sugNav-item" href="#">programming</a>
+                <a class="sugNav-item" href="#">All</a>
+                <a class="sugNav-item" href="#">Music</a>
+                <a class="sugNav-item" href="#">Soundtracks</a>
+                <a class="sugNav-item" href="#">Playlists</a>
+                <a class="sugNav-item" href="#">Live</a>
+                <a class="sugNav-item" href="#">Gaming</a>
+                <a class="sugNav-item" href="#">programming</a>
+                <a class="sugNav-item" href="#">All</a>
+                <a class="sugNav-item" href="#">Music</a>
+                <a class="sugNav-item" href="#">Soundtracks</a>
+                <a class="sugNav-item" href="#">Playlists</a>
+                <a class="sugNav-item" href="#">Live</a>
+                <a class="sugNav-item" href="#">Gaming</a>
+                <a class="sugNav-item" href="#">programming</a>
+                <a class="sugNav-item" href="#">Music</a>
+                <a class="sugNav-item" href="#">Soundtracks</a>
+                <a class="sugNav-item" href="#">Playlists</a>
+                <a class="sugNav-item" href="#">Live</a>
+                <a class="sugNav-item" href="#">Gaming</a>
+                <a class="sugNav-item" href="#">programming</a>
+            </nav>
+
+            <!-- videosGrid start here -->
+            <section class="videosContainer">
+                <div class="video">
+                    <div class="coverPhoto">
+                        <a href="#">
+                            <img src="images/wallpaperflare.com_wallpaper.jpg3333333.jpg" alt="coverPhoto">
+                        </a>
+                    </div>
+                    <div class="videoDetails">
+                        <div class="channel">
+                            <a href="#">
+                                <img src="images/wallpaperflare.com_wallpaper (4).jpg" alt="creatorPhoto">
+                            </a>
+                        </div>
+                        <div class="details">
+                            <h3 class="title">Title of video ssssss ssssss sss ssssss ssssssssss ssssssssss sssss</h3>
+                            <a href="#" class="channelName">Channel Name</a>
+                            <div class="views-upload">
+                                <span class="views">1.9M View •</span> <!-- alt + 0149 >>> •-->
+                                <span class="upload">2 years ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="coverPhoto">
+                        <a href="#">
+                            <img src="images/wallpaperflare.com_wallpaper (47).jpg" alt="coverPhoto">
+                        </a>
+                    </div>
+                    <div class="videoDetails">
+                        <div class="channel">
+                            <a href="##">
+                                <img src="images/wallpaperflare.com_wallpaper.jpg3333333.jpg" alt="creatorPhoto">
+                            </a>
+                        </div>
+                        <div class="details">
+                            <h3 class="title">Title of video ssssss ssssss sss ssssss ssssssssss ssssssssss sssss</h3>
+                            <a href="#" class="channelName">Channel Name</a>
+                            <div class="views-upload">
+                                <span class="views">1.9M View •</span> <!-- alt + 0149 >>> •-->
+                                <span class="upload">2 years ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="coverPhoto">
+                        <a href="#">
+                            <img src="images/wallpap000000000000erflare.com_wallpaper.jpg" alt="coverPhoto">
+                        </a>
+                    </div>
+                    <div class="videoDetails">
+                        <div class="channel">
+                            <a href="##">
+                                <img src="images/wallpaperflare.com_wallpaper.jpg" alt="creatorPhoto">
+                            </a>
+                        </div>
+                        <div class="details">
+                            <h3 class="title">Title of video ssssss ssssss sss ssssss ssssssssss ssssssssss sssss</h3>
+                            <a href="#" class="channelName">Channel Name</a>
+                            <div class="views-upload">
+                                <span class="views">1.9M View •</span> <!-- alt + 0149 >>> •-->
+                                <span class="upload">2 years ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="coverPhoto">
+                        <a href="#">
+                            <img src="images/wallpaperflare.com_wallpaper (22).jpg" alt="coverPhoto">
+                        </a>
+                    </div>
+                    <div class="videoDetails">
+                        <div class="channel">
+                            <a href="##">
+                                <img src="images/wallpaperflare.com_wallpaper (47).jpg" alt="creatorPhoto">
+                            </a>
+                        </div>
+                        <div class="details">
+                            <h3 class="title">Title of video ssssss ssssss sss ssssss ssssssssss ssssssssss sssss</h3>
+                            <a href="#" class="channelName">Channel Name</a>
+                            <div class="views-upload">
+                                <span class="views">1.9M View •</span> <!-- alt + 0149 >>> •-->
+                                <span class="upload">2 years ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="coverPhoto">
+                        <a href="#">
+                            <img src="images/wallpaperflare.com_wallpaper.jpg3333333.jpg" alt="coverPhoto">
+                        </a>
+                    </div>
+                    <div class="videoDetails">
+                        <div class="channel">
+                            <a href="#">
+                                <img src="images/wallpaperflare.com_wallpaper (4).jpg" alt="creatorPhoto">
+                            </a>
+                        </div>
+                        <div class="details">
+                            <h3 class="title">Title of video ssssss ssssss sss ssssss ssssssssss ssssssssss sssss</h3>
+                            <a href="#" class="channelName">Channel Name</a>
+                            <div class="views-upload">
+                                <span class="views">1.9M View •</span> <!-- alt + 0149 >>> •-->
+                                <span class="upload">2 years ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="coverPhoto">
+                        <a href="#">
+                            <img src="images/wallpaperflare.com_wallpaper (47).jpg" alt="coverPhoto">
+                        </a>
+                    </div>
+                    <div class="videoDetails">
+                        <div class="channel">
+                            <a href="##">
+                                <img src="images/wallpaperflare.com_wallpaper.jpg3333333.jpg" alt="creatorPhoto">
+                            </a>
+                        </div>
+                        <div class="details">
+                            <h3 class="title">Title of video ssssss ssssss sss ssssss ssssssssss ssssssssss sssss</h3>
+                            <a href="#" class="channelName">Channel Name</a>
+                            <div class="views-upload">
+                                <span class="views">1.9M View •</span> <!-- alt + 0149 >>> •-->
+                                <span class="upload">2 years ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="coverPhoto">
+                        <a href="#">
+                            <img src="images/wallpap000000000000erflare.com_wallpaper.jpg" alt="coverPhoto">
+                        </a>
+                    </div>
+                    <div class="videoDetails">
+                        <div class="channel">
+                            <a href="##">
+                                <img src="images/wallpaperflare.com_wallpaper.jpg" alt="creatorPhoto">
+                            </a>
+                        </div>
+                        <div class="details">
+                            <h3 class="title">Title of video ssssss ssssss sss ssssss ssssssssss ssssssssss sssss</h3>
+                            <a href="#" class="channelName">Channel Name</a>
+                            <div class="views-upload">
+                                <span class="views">1.9M View •</span> <!-- alt + 0149 >>> •-->
+                                <span class="upload">2 years ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="coverPhoto">
+                        <a href="#">
+                            <img src="images/wallpaperflare.com_wallpaper (22).jpg" alt="coverPhoto">
+                        </a>
+                    </div>
+                    <div class="videoDetails">
+                        <div class="channel">
+                            <a href="##">
+                                <img src="images/wallpaperflare.com_wallpaper (47).jpg" alt="creatorPhoto">
+                            </a>
+                        </div>
+                        <div class="details">
+                            <h3 class="title">Title of video ssssss ssssss sss ssssss ssssssssss ssssssssss sssss</h3>
+                            <a href="#" class="channelName">Channel Name</a>
+                            <div class="views-upload">
+                                <span class="views">1.9M View •</span> <!-- alt + 0149 >>> •-->
+                                <span class="upload">2 years ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="coverPhoto">
+                        <a href="#">
+                            <img src="images/wallpaperflare.com_wallpaper.jpg3333333.jpg" alt="coverPhoto">
+                        </a>
+                    </div>
+                    <div class="videoDetails">
+                        <div class="channel">
+                            <a href="#">
+                                <img src="images/wallpaperflare.com_wallpaper (4).jpg" alt="creatorPhoto">
+                            </a>
+                        </div>
+                        <div class="details">
+                            <h3 class="title">Title of video ssssss ssssss sss ssssss ssssssssss ssssssssss sssss</h3>
+                            <a href="#" class="channelName">Channel Name</a>
+                            <div class="views-upload">
+                                <span class="views">1.9M View •</span> <!-- alt + 0149 >>> •-->
+                                <span class="upload">2 years ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="coverPhoto">
+                        <a href="#">
+                            <img src="images/wallpaperflare.com_wallpaper (47).jpg" alt="coverPhoto">
+                        </a>
+                    </div>
+                    <div class="videoDetails">
+                        <div class="channel">
+                            <a href="##">
+                                <img src="images/wallpaperflare.com_wallpaper.jpg3333333.jpg" alt="creatorPhoto">
+                            </a>
+                        </div>
+                        <div class="details">
+                            <h3 class="title">Title of video ssssss ssssss sss ssssss ssssssssss ssssssssss sssss</h3>
+                            <a href="#" class="channelName">Channel Name</a>
+                            <div class="views-upload">
+                                <span class="views">1.9M View •</span> <!-- alt + 0149 >>> •-->
+                                <span class="upload">2 years ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="coverPhoto">
+                        <a href="#">
+                            <img src="images/wallpap000000000000erflare.com_wallpaper.jpg" alt="coverPhoto">
+                        </a>
+                    </div>
+                    <div class="videoDetails">
+                        <div class="channel">
+                            <a href="##">
+                                <img src="images/wallpaperflare.com_wallpaper.jpg" alt="creatorPhoto">
+                            </a>
+                        </div>
+                        <div class="details">
+                            <h3 class="title">Title of video ssssss ssssss sss ssssss ssssssssss ssssssssss sssss</h3>
+                            <a href="#" class="channelName">Channel Name</a>
+                            <div class="views-upload">
+                                <span class="views">1.9M View •</span> <!-- alt + 0149 >>> •-->
+                                <span class="upload">2 years ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="coverPhoto">
+                        <a href="#">
+                            <img src="images/wallpaperflare.com_wallpaper (22).jpg" alt="coverPhoto">
+                        </a>
+                    </div>
+                    <div class="videoDetails">
+                        <div class="channel">
+                            <a href="##">
+                                <img src="images/wallpaperflare.com_wallpaper (47).jpg" alt="creatorPhoto">
+                            </a>
+                        </div>
+                        <div class="details">
+                            <h3 class="title">Title of video ssssss ssssss sss ssssss ssssssssss ssssssssss sssss</h3>
+                            <a href="#" class="channelName">Channel Name</a>
+                            <div class="views-upload">
+                                <span class="views">1.9M View •</span> <!-- alt + 0149 >>> •-->
+                                <span class="upload">2 years ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="coverPhoto">
+                        <a href="#">
+                            <img src="images/wallpaperflare.com_wallpaper.jpg3333333.jpg" alt="coverPhoto">
+                        </a>
+                    </div>
+                    <div class="videoDetails">
+                        <div class="channel">
+                            <a href="#">
+                                <img src="images/wallpaperflare.com_wallpaper (4).jpg" alt="creatorPhoto">
+                            </a>
+                        </div>
+                        <div class="details">
+                            <h3 class="title">Title of video ssssss ssssss sss ssssss ssssssssss ssssssssss sssss</h3>
+                            <a href="#" class="channelName">Channel Name</a>
+                            <div class="views-upload">
+                                <span class="views">1.9M View •</span> <!-- alt + 0149 >>> •-->
+                                <span class="upload">2 years ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="coverPhoto">
+                        <a href="#">
+                            <img src="images/wallpaperflare.com_wallpaper (47).jpg" alt="coverPhoto">
+                        </a>
+                    </div>
+                    <div class="videoDetails">
+                        <div class="channel">
+                            <a href="##">
+                                <img src="images/wallpaperflare.com_wallpaper.jpg3333333.jpg" alt="creatorPhoto">
+                            </a>
+                        </div>
+                        <div class="details">
+                            <h3 class="title">Title of video ssssss ssssss sss ssssss ssssssssss ssssssssss sssss</h3>
+                            <a href="#" class="channelName">Channel Name</a>
+                            <div class="views-upload">
+                                <span class="views">1.9M View •</span> <!-- alt + 0149 >>> •-->
+                                <span class="upload">2 years ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="coverPhoto">
+                        <a href="#">
+                            <img src="images/wallpap000000000000erflare.com_wallpaper.jpg" alt="coverPhoto">
+                        </a>
+                    </div>
+                    <div class="videoDetails">
+                        <div class="channel">
+                            <a href="##">
+                                <img src="images/wallpaperflare.com_wallpaper.jpg" alt="creatorPhoto">
+                            </a>
+                        </div>
+                        <div class="details">
+                            <h3 class="title">Title of video ssssss ssssss sss ssssss ssssssssss ssssssssss sssss</h3>
+                            <a href="#" class="channelName">Channel Name</a>
+                            <div class="views-upload">
+                                <span class="views">1.9M View •</span> <!-- alt + 0149 >>> •-->
+                                <span class="upload">2 years ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="coverPhoto">
+                        <a href="#">
+                            <img src="images/wallpaperflare.com_wallpaper (22).jpg" alt="coverPhoto">
+                        </a>
+                    </div>
+                    <div class="videoDetails">
+                        <div class="channel">
+                            <a href="##">
+                                <img src="images/wallpaperflare.com_wallpaper (47).jpg" alt="creatorPhoto">
+                            </a>
+                        </div>
+                        <div class="details">
+                            <h3 class="title">Title of video ssssss ssssss sss ssssss ssssssssss ssssssssss sssss</h3>
+                            <a href="#" class="channelName">Channel Name</a>
+                            <div class="views-upload">
+                                <span class="views">1.9M View •</span> <!-- alt + 0149 >>> •-->
+                                <span class="upload">2 years ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="coverPhoto">
+                        <a href="#">
+                            <img src="images/wallpaperflare.com_wallpaper.jpg3333333.jpg" alt="coverPhoto">
+                        </a>
+                    </div>
+                    <div class="videoDetails">
+                        <div class="channel">
+                            <a href="#">
+                                <img src="images/wallpaperflare.com_wallpaper (4).jpg" alt="creatorPhoto">
+                            </a>
+                        </div>
+                        <div class="details">
+                            <h3 class="title">Title of video ssssss ssssss sss ssssss ssssssssss ssssssssss sssss</h3>
+                            <a href="#" class="channelName">Channel Name</a>
+                            <div class="views-upload">
+                                <span class="views">1.9M View •</span> <!-- alt + 0149 >>> •-->
+                                <span class="upload">2 years ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="coverPhoto">
+                        <a href="#">
+                            <img src="images/wallpaperflare.com_wallpaper (47).jpg" alt="coverPhoto">
+                        </a>
+                    </div>
+                    <div class="videoDetails">
+                        <div class="channel">
+                            <a href="##">
+                                <img src="images/wallpaperflare.com_wallpaper.jpg3333333.jpg" alt="creatorPhoto">
+                            </a>
+                        </div>
+                        <div class="details">
+                            <h3 class="title">Title of video ssssss ssssss sss ssssss ssssssssss ssssssssss sssss</h3>
+                            <a href="#" class="channelName">Channel Name</a>
+                            <div class="views-upload">
+                                <span class="views">1.9M View •</span> <!-- alt + 0149 >>> •-->
+                                <span class="upload">2 years ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="coverPhoto">
+                        <a href="#">
+                            <img src="images/wallpap000000000000erflare.com_wallpaper.jpg" alt="coverPhoto">
+                        </a>
+                    </div>
+                    <div class="videoDetails">
+                        <div class="channel">
+                            <a href="##">
+                                <img src="images/wallpaperflare.com_wallpaper.jpg" alt="creatorPhoto">
+                            </a>
+                        </div>
+                        <div class="details">
+                            <h3 class="title">Title of video ssssss ssssss sss ssssss ssssssssss ssssssssss sssss</h3>
+                            <a href="#" class="channelName">Channel Name</a>
+                            <div class="views-upload">
+                                <span class="views">1.9M View •</span> <!-- alt + 0149 >>> •-->
+                                <span class="upload">2 years ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="coverPhoto">
+                        <a href="#">
+                            <img src="images/wallpaperflare.com_wallpaper (22).jpg" alt="coverPhoto">
+                        </a>
+                    </div>
+                    <div class="videoDetails">
+                        <div class="channel">
+                            <a href="##">
+                                <img src="images/wallpaperflare.com_wallpaper (47).jpg" alt="creatorPhoto">
+                            </a>
+                        </div>
+                        <div class="details">
+                            <h3 class="title">Title of video ssssss ssssss sss ssssss ssssssssss ssssssssss sssss</h3>
+                            <a href="#" class="channelName">Channel Name</a>
+                            <div class="views-upload">
+                                <span class="views">1.9M View •</span> <!-- alt + 0149 >>> •-->
+                                <span class="upload">2 years ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="coverPhoto">
+                        <a href="#">
+                            <img src="images/wallpaperflare.com_wallpaper.jpg3333333.jpg" alt="coverPhoto">
+                        </a>
+                    </div>
+                    <div class="videoDetails">
+                        <div class="channel">
+                            <a href="#">
+                                <img src="images/wallpaperflare.com_wallpaper (4).jpg" alt="creatorPhoto">
+                            </a>
+                        </div>
+                        <div class="details">
+                            <h3 class="title">Title of video ssssss ssssss sss ssssss ssssssssss ssssssssss sssss</h3>
+                            <a href="#" class="channelName">Channel Name</a>
+                            <div class="views-upload">
+                                <span class="views">1.9M View •</span> <!-- alt + 0149 >>> •-->
+                                <span class="upload">2 years ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="coverPhoto">
+                        <a href="#">
+                            <img src="images/wallpaperflare.com_wallpaper (47).jpg" alt="coverPhoto">
+                        </a>
+                    </div>
+                    <div class="videoDetails">
+                        <div class="channel">
+                            <a href="##">
+                                <img src="images/wallpaperflare.com_wallpaper.jpg3333333.jpg" alt="creatorPhoto">
+                            </a>
+                        </div>
+                        <div class="details">
+                            <h3 class="title">Title of video ssssss ssssss sss ssssss ssssssssss ssssssssss sssss</h3>
+                            <a href="#" class="channelName">Channel Name</a>
+                            <div class="views-upload">
+                                <span class="views">1.9M View •</span> <!-- alt + 0149 >>> •-->
+                                <span class="upload">2 years ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="coverPhoto">
+                        <a href="#">
+                            <img src="images/wallpap000000000000erflare.com_wallpaper.jpg" alt="coverPhoto">
+                        </a>
+                    </div>
+                    <div class="videoDetails">
+                        <div class="channel">
+                            <a href="##">
+                                <img src="images/wallpaperflare.com_wallpaper.jpg" alt="creatorPhoto">
+                            </a>
+                        </div>
+                        <div class="details">
+                            <h3 class="title">Title of video ssssss ssssss sss ssssss ssssssssss ssssssssss sssss</h3>
+                            <a href="#" class="channelName">Channel Name</a>
+                            <div class="views-upload">
+                                <span class="views">1.9M View •</span> <!-- alt + 0149 >>> •-->
+                                <span class="upload">2 years ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+
+</body>
+
+</html>
